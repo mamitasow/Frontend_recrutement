@@ -1,0 +1,115 @@
+html,
+body {
+  width: 100%;
+  background: #eeeeee;
+  overflow: hidden;
+}
+
+.nav-bar {
+  width: 100vw;
+  background: #ffffff;
+  margin-bottom: 10px;
+}
+
+.nav-bar .search-bar-container > .form-control {
+  border-radius: 0;
+  background: #eeeeee;
+  border: 1.5px solid #eeeeee;
+}
+
+.nav-bar .search-bar-container .input-group > input {
+  border-left: none !important;
+}
+
+.nav-bar .search-bar-container .input-group-text {
+  border-right: none !important;
+}
+
+.nav-bar .add-post-container > button {
+  border-radius: 0;
+  border: 1.5px solid #ff9700;
+}
+
+.nav-bar .export-container > button {
+  border: 1.5px solid #000000;
+  border-radius: 0;
+}
+
+.custom-grey {
+  background-color:#eeeeee;
+  color: #ffffff;
+}
+
+.custom-orange {
+  background-color: #ff9700;
+  color: #ffffff;
+}
+
+button {
+  border-radius: 0 !important;
+}
+
+.main {
+  width: 100%;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+main .bg-dark {
+  background: #000000 !important;
+}
+
+main .bg-grey {
+  background-color: #dedede;
+  padding: 1rem .5rem;
+}
+
+main select.form-control {
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+main .label-grey {
+  color: #424242;
+}
+
+main .overflow-horizontal {
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+main .overflow-horizontal::-webkit-scrollbar{
+   display: none;
+}
+main .overflow-horizontal span{
+   border-bottom: 2px solid #ececec;
+   text-align: center;
+
+
+}
+main .overflow-horizontal span.active{
+  border-bottom: 2px solid #ff9700;
+  color: #ff9700;
+
+}
+.w-35 {
+  width: 35%;
+}
+
+.custom-grey-dark{
+  background-color: #D8D8D8;
+  color:black; 
+}
+
+thead th {
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #2c2c2c !important;
+  border-top: 1px solid #2c2c2c !important; 
+}
+
+thead th:last-child {
+  border-right: 1px solid #2c2c2c !important;
+}
+tbody tr td {
+  text-align: center;
+  vertical-align:center;
+}
