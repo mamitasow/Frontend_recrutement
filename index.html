@@ -1,17 +1,231 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css'/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>RH - Suivi Recrutement!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+      <header id="header" class="d-flex nav-bar">
+        <div class="container-fluid">
+          <div class="row py-4">
+            <div class="search-bar-container col-md-3 col-sm-12 col-12">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fa fa-search"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control custom-grey">
+              </div>
+            </div>
+            <div class="add-post-container px-4 col-md-3 col-sm-12 col-12">
+              <button class="btn custom-orange w-100">
+                <i class="fa fa-plus-circle"></i>
+                Ajouter un poste
+              </button>
+            </div>
+            <div class="add-post-container px-4 col-md-3 col-sm-12 col-12">
+                <button class="btn custom-orange w-100">
+                  <i class="fa fa-plus-circle"></i>
+                  Ajouter un candidat
+                </button>
+              </div>
+            <div class="export-container px-4 col-md-3 col-sm-12 col-12">
+              <button class="btn bg-transparent w-100">
+                <i class="fa fa-file-download mr-4"></i>
+                Exporter
+              </button>
+             </div>
+          </div>
+        </div>
+      </header>
+
+      <main id="main" class="main">
+        <div class="container-fluid w-100">
+          <div class="row bg-grey">
+            <div class="col-md-9 col-sm-12 col-12">
+              <div>
+                <div class="row">
+                  <div class="col-md-3 col-ms-12 col-12">
+                    <div class="form-group">
+                      <label for="direction" class="label-grey">Direction</label>
+                      <select name="direction" id="direction" class="form-control">
+                        <option value="*">Toutes les directions</option>
+                        <option value="dmgp" selected="selected">
+                          DMGP
+                        </option>
+                        <option value="dga">
+                          DGA
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-ms-12 col-12">
+                      <div class="form-group">
+                          <label for="direction" class="label-grey">Poste</label>
+                          <select name="direction" id="direction" class="form-control">
+                            <option value="*">Tous les postes</option>
+                            <option value="ds" selected="selected">
+                              Data Scientist
+                            </option>
+                            <option value="dga">
+                              Designer
+                            </option>
+                          </select>
+                        </div>
+                  </div>
+                  <div class="col-md-3 col-ms-12 col-12">
+                      <div class="form-group">
+                          <label for="direction" class="label-grey">Type recrutement</label>
+                          <select name="direction" id="direction" class="form-control">
+                            <option value="*">Tous types</option>
+                            <option value="externe" selected="selected">
+                              Externe
+                            </option>
+                            <option value="interne">
+                              Interne
+                            </option>
+                          </select>
+                        </div>
+                  </div>
+                  <div class="col-md-3 col-ms-12 col-12">
+                      <div class="form-group">
+                          <label for="direction" class="label-grey">Etat</label>
+                          <select name="direction" id="direction" class="form-control">
+                            <option value="*">Toutes les états</option>
+                            <option value="solde" selected="selected">
+                              Solde
+                            </option>
+                            <option value="noteechu">
+                              Non Echu
+                            </option>
+                          </select>
+                        </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-12 col-12 pr-md-3 pl-md-4 py-md-2">
+              <button class="btn bg-dark text-white mt-4 mr-auto w-100">Appliquer</button>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="row">
+            <div class="col-md-1 col-sm-2 col-2 d-flex  flex-column justify-content-center align-items-center">
+              <i class="fa fa-angle-double-left"></i>
+            </div>
+            <div class="col-md-10 col-sm-8 col-8">
+              <div class="w-100 d-flex overflow-horizontal">
+                <span class="font-weight-bold align-middle w-35 active d-block">Toutes les directions</span>
+                <span class="font-weight-bold align-middle w-35 d-flex  flex-column justify-content-center align-items-center">DGA</span>
+                <span class="font-weight-bold align-middle w-35 d-flex flex-column justify-content-center align-items-center">RH</span>
+                <span class="font-weight-bold align-middle w-35 d-flex flex-column justify-content-center align-items-center">DMGP</span>
+                <span class="font-weight-bold align-middle w-35 d-flex flex-column justify-content-center align-items-center">DG</span>
+                <span class="font-weight-bold align-middle w-35 d-flex flex-column justify-content-center align-items-center">DDE</span>
+                <span class="font-weight-bold align-middle w-35 d-flex flex-column justify-content-center align-items-center">DFC</span>
+              </div>
+            </div>
+            <div class="col-md-1 col-sm-2 col-2 d-flex  flex-column justify-content-center align-items-center">
+              <i class="fa fa-angle-double-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 mx-3">
+          <div class="row">
+            <div class="col-md-12 col-12">
+              <div class="table-responsive">
+                <table class="table ">
+                  <thead class="custom-grey-dark font-weight-bold">
+                    <tr>
+                      <th>Poste à Pourvoir</th>
+                      <th>T. recrutement</th>
+                      <th>1ere comm.</th>
+                      <th>Grande commm.</th>
+                      <th>Pub. note</th>
+                      <th>P. de service</th>
+                      <th>Etat d'avance.</th>
+                      <th>Etat final</th>
+                      <th>
+                        <i class=" text-dark fa fa-edit"></i>
+                        |
+                        <i class="text-danger fa fa-trash-alt"></i>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-bottom-1">
+                      <td>ExPert Process</td>
+                      <td>Interne</td>
+                      <td>22/02/17</td>
+                      <td>22/02/18</td>
+                      <td>02/03/18</td>
+                      <td>02/03/18</td>
+                      <td>Solde</td>
+                      <td>Solde</td>
+                      <td>
+                        <a href="#">  <i class=" text-dark fa fa-edit"></i></a> 
+                        |
+                        <a href="#"> <i class="text-danger fa fa-trash-alt"></i></a> 
+                      </td>
+                    </tr>
+                    <tr class="border-bottom-1">
+                      <td>ExPert Process</td>
+                      <td>Interne</td>
+                      <td>22/02/17</td>
+                      <td>22/02/18</td>
+                      <td>02/03/18</td>
+                      <td>02/03/18</td>
+                      <td>Solde</td>
+                      <td>Solde</td>
+                      <td>
+                       <a href="#"><i class=" text-dark fa fa-edit"></i></a> 
+                        |
+                        <a href="#"> <i class="text-danger fa fa-trash-alt"></i></a> 
+                      </td>
+                    </tr>
+                    <tr class="border-bottom-1">
+                      <td>ExPert Process</td>
+                      <td>Interne</td>
+                      <td>22/02/17</td>
+                      <td>22/02/18</td>
+                      <td>02/03/18</td>
+                      <td>02/03/18</td>
+                      <td>Solde</td>
+                      <td>Solde</td>
+                      <td>
+                        <a href="#"> <i class=" text-dark fa fa-edit"></i></a> 
+                        |
+                        <a href="#"> <i class="text-danger fa fa-trash-alt"></i></a> 
+                      </td>
+                    </tr>
+                    <tr class="border-bottom-1">
+                      <td>ExPert Process</td>
+                      <td>Interne</td>
+                      <td>22/02/17</td>
+                      <td>22/02/18</td>
+                      <td>02/03/18</td>
+                      <td>02/03/18</td>
+                      <td>Solde</td>
+                      <td>Solde</td>
+                      <td>
+                        <a href="#"> <i class=" text-dark fa fa-edit"></i></a> 
+                        |
+                        <a href="#"> <i class="text-danger fa fa-trash-alt"></i></a> 
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
