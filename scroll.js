@@ -31,4 +31,21 @@ $(document).ready(function(){
         $(this).siblings('.active').removeClass('active');
     });
 
+    $('#delete').click(function(){
+        swal({
+            title: "Lorem Ipsum ?",
+            text: "Lorem ipsum dolor sit amet consectur",
+            icon: "warning",
+            buttons: ["Annuler", "OK"],
+            dangerMode: true,
+          })
+          .then((willDelete) => {
+            if (willDelete) {
+              swal("Supprimé", {
+                icon: "success",
+              });
+            }
+          });
+    })
+
 })
